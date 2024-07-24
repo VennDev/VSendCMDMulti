@@ -33,3 +33,6 @@ VSendCMDMulti::sendImmediatelyCommand(string $command, string $ip, int $port, st
 ```php
 VSendCMDMulti::sendAsyncCommand(string $command, string $ip, int $port, string $password);
 ```
+
+# Illustration Ideas
+<img src="https://github.com/VennDev/VSendCMDMulti/blob/main/Untitled.png">
