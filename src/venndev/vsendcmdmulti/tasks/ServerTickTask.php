@@ -63,6 +63,8 @@ final class ServerTickTask extends Task
                 Server::getInstance()->getLogger()->error($e->getMessage());
             }
         }
+
+        VSendCMDMulti::runAsyncCommands();
     }
 
 }
