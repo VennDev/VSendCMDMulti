@@ -27,5 +27,9 @@ protected function onEnable(): void
 ```
 - Send a request to execute a command to another server!
 ```php
-VSendCMDMulti::sendCommand(string $command, string $ip, int $port, string $password);
+VSendCMDMulti::sendImmediatelyCommand(string $command, string $ip, int $port, string $password);
+```
+- Send a async request to execute a command to another server!
+```php
+VSendCMDMulti::sendAsyncCommand(string $command, string $ip, int $port, string $password);
 ```
