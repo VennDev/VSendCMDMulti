@@ -15,6 +15,16 @@ settings-host:
 ```
 
 # Method
+- Init when use virion in the plugin
+```php
+...
+use venndev\vsendcmdmulti\VSendCMDMulti;
+
+protected function onEnable(): void
+{
+    VSendCMDMulti::init($this);
+}
+```
 - Send a request to execute a command to another server!
 ```php
 VSendCMDMulti::sendCommand(string $command, string $ip, int $port, string $password);
