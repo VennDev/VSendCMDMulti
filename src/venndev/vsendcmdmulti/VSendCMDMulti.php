@@ -12,10 +12,15 @@ final class VSendCMDMulti
 {
     use VirionManager;
 
+    private static bool $initialized = false;
+
     public static function init(PluginBase $plugin): void
     {
-        self::initVirionManager($plugin); // Initialize the virion manager
-        $plugin->getScheduler()->scheduleRepeatingTask(new tasks\ServerTickTask(), 20);
+        if (!self::$initialized) {
+            self::initVirionManager($plugin); // Initialize the virion manager
+            $plugin->getScheduler()->scheduleRepeatingTask(new tasks\ServerTickTask(), 20);
+            self::$initialized = true;
+        }
     }
 
     /**
