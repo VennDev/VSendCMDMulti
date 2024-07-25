@@ -36,3 +36,7 @@ VSendCMDMulti::sendAsyncCommand(string $command, string $ip, int $port, string $
 
 # Illustration Ideas
 <img src="https://github.com/VennDev/VSendCMDMulti/blob/main/Untitled.png">
+
+# Credits
+- API Designer: [VennDev](https://github.com/VennDev)
+- Paypal: pnam5005@gmail.com
