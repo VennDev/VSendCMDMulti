@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace venndev\vsendcmdmulti\handler;
 
 use Exception;
-use pocketmine\Server;
 use Throwable;
+use pocketmine\Server;
 use venndev\vsendcmdmulti\network\ServerSocket;
 use venndev\vsendcmdmulti\utils\BuildString;
 use venndev\vsendcmdmulti\utils\CommandStruct;
